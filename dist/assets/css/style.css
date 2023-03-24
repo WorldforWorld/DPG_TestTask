@@ -229,7 +229,7 @@ select {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url("assets/img/cosmos.jpg") no-repeat center/cover;
+  background: url("../img/cosmos.jpg") no-repeat center/cover;
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 300;
