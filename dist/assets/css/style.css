@@ -1,53 +1,37 @@
 @charset "UTF-8";
-
 .form__wrap {
   width: 390px;
   padding: 40px 45px;
   margin: 25px;
   border-radius: 27px;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
   background-color: #171929;
 }
-
 .form__header {
   text-align: center;
 }
-
 .form__header-titile {
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 10px;
   line-height: 120%;
 }
-
 .form__header-subtitle {
   color: #797EA3;
 }
-
 .form__body {
   margin-top: 10px;
 }
-
 .form__body .input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  flex-direction: column-reverse;
   margin-bottom: 38px;
   position: relative;
 }
-
 .form__body .input-group .error {
   display: none;
 }
-
 .form__body .input-group.error .error {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: -23px;
@@ -55,22 +39,16 @@
   font-size: 12px;
   color: red;
 }
-
 .form__body .input-group.error .input {
   border-bottom: 1px solid red;
 }
-
 .form__body .input-group.error .label {
   color: red;
 }
-
 .form__body .input-group .label {
   color: #797EA3;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-
 .form__body .input-group .input {
   border: none;
   outline: none;
@@ -80,23 +58,17 @@
   line-height: 120%;
   color: #FFFFFF;
   background-color: transparent;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
-
 .form__body .input-group .input:focus {
   border-color: #FFFFFF;
 }
-
 .form__body .input-group .input:focus + .label {
   color: #FFFFFF;
 }
-
 .form__body .policy {
   position: relative;
 }
-
 .form__body .policy .error {
   display: none;
   position: absolute;
@@ -105,118 +77,76 @@
   font-size: 12px;
   color: red;
 }
-
 .form__body .policy.error .error {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .form__body .policy__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 12px;
   cursor: pointer;
   color: #797EA3;
 }
-
 .form__body .policy__label::before {
   content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 31px;
   height: 31px;
   background: #2C2F47;
   border-radius: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .form__body .policy__label a {
   color: #B9BEE5;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-
 .form__body .policy__label a:hover {
   color: #FFFFFF;
 }
-
 .form__body #policy-checkboxs {
   display: none;
 }
-
 .form__body #policy-checkboxs:checked ~ .policy__label:before {
   content: "✓";
   text-align: center;
   color: #FFFFFF;
   opacity: 0.7;
 }
-
 .form__label {
   margin-bottom: 6px;
 }
-
 .form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 30px auto 0;
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
 }
-
 .links h1 {
   margin-bottom: 30px;
 }
-
 .links ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   padding-left: 0;
 }
-
 .links ul a {
   color: #FFFFFF;
   text-decoration: none;
   padding: 20px 30px;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-  -webkit-transition: background-color 0.4s ease;
-  -o-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
   background-color: rgba(255, 255, 255, 0);
 }
-
 .links ul a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -230,28 +160,22 @@
   font-weight: 400;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: background 0.3s ease, color 0.3s ease;
-  -o-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
-
 .button:hover {
   background: rgba(44, 47, 71, 0.7);
   color: white;
 }
 
 /* Box sizing rules */
-
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
-
 body,
 h1,
 h2,
@@ -266,20 +190,17 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-
 ul[role=list],
 ol[role=list] {
   list-style: none;
 }
 
 /* Set core root defaults */
-
 html:focus-within {
   scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
-
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -287,14 +208,11 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
-
 img,
 picture {
   max-width: 100%;
@@ -302,7 +220,6 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-
 input,
 button,
 textarea,
@@ -310,11 +227,9 @@ select {
   font: inherit;
 }
 
-.no-webp body{
-  background: url("../img/cosmos.jpg") no-repeat center/cover; }
-
 body {
   font-family: "Roboto", sans-serif;
+  background: url("assets/img/cosmos.jpg") no-repeat center/cover;
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 300;
@@ -331,28 +246,16 @@ body {
 }
 
 .felx {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .felx-colum {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .felx-colum-center-horizontal {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .felx-container-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   min-height: 100vh;
   height: 100%;
 }
@@ -365,5 +268,3 @@ textarea {
   height: 45px;
   resize: none;
 }
-
-.webp body{ background: url(../img/cosmos.webp) no-repeat center/cover; }
