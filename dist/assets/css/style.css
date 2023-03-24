@@ -1,3 +1,94 @@
+@charset "UTF-8";
+.form__wrap {
+  width: 390px;
+  padding: 40px 45px;
+  margin: 25px;
+  border-radius: 27px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  background-color: #171929;
+}
+.form__header {
+  text-align: center;
+}
+.form__header-titile {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 120%;
+}
+.form__header-subtitle {
+  color: #797EA3;
+}
+.form__body {
+  margin-top: 10px;
+}
+.form__body .input-group {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 38px;
+}
+.form__body .input-group .label {
+  color: #797EA3;
+  transition: color 0.3s ease;
+}
+.form__body .input-group .input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3F4363;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  background-color: transparent;
+  transition: border 0.3s ease;
+}
+.form__body .input-group .input:focus {
+  border-color: #FFFFFF;
+}
+.form__body .input-group .input:focus + .label {
+  color: #FFFFFF;
+}
+.form__body .policy__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #797EA3;
+}
+.form__body .policy__label::before {
+  content: "";
+  display: flex;
+  width: 31px;
+  height: 31px;
+  background: #2C2F47;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.form__body .policy__label a {
+  color: #B9BEE5;
+  transition: color 0.3s ease;
+}
+.form__body .policy__label a:hover {
+  color: #FFFFFF;
+}
+.form__body #policy-checkboxs {
+  display: none;
+}
+.form__body #policy-checkboxs:checked ~ .policy__label:before {
+  content: "✓";
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.form__label {
+  margin-bottom: 6px;
+}
+.form__button {
+  display: flex;
+  margin: 30px auto 0;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -26,6 +117,23 @@
 }
 .links ul a:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  background: #2C2F47;
+  border-radius: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(44, 47, 71, 0.7);
+  color: white;
 }
 
 /* Box sizing rules */
@@ -89,6 +197,42 @@ select {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url("../img/cosmos.jpg") 0 0 no-repeat;
+  background: url("../img/cosmos.jpg") no-repeat center/cover;
   color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.felx {
+  display: flex;
+}
+.felx-colum {
+  flex-direction: column;
+}
+.felx-colum-center-horizontal {
+  align-items: center;
+}
+.felx-container-center {
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.py-8 {
+  padding: 32px 0;
+}
+
+textarea {
+  height: 45px;
+  resize: none;
 }

@@ -15,8 +15,51 @@
 </head>
 
 <body>
-	<main>
-		
+	<main class="py-8">
+		<div class="container felx felx-container-center">
+			<div class="row felx felx-colum felx-colum-center-horizontal">
+				<h1>Hello</h1>
+				<div class="form__wrap">
+	<div class="form__header">
+		<h2 class="form__header-titile">For business enquiries please use the form below</h2>
+		<span class="form__header-subtitle">*Required</span>
+	</div>
+	<div class="form__body">
+		<form method="POST" novalidate="novalidate">
+			<div class="input-group">
+				<input type="text" name="userName" class="input form__input" id="user-name">
+				<label for="user-name" class="label form__label">Name*</label>
+			</div>
+			<div class="input-group">
+				<input type="text" name="userCompany" class="input form__input" id="user-company">
+				<label for="user-company" class="label form__label">Company*</label>
+			</div>
+			<div class="input-group">
+				<input type="email" name="userEmail" class="input form__input" id="user-email">
+				<label for="user-email" class="label form__label">Email*</label>
+			</div>
+			<div class="input-group">
+				<input type="tel" name="userPhone" class="input form__input" id="user-phone">
+				<label for="user-phone" class="label form__label">Телефон</label>
+			</div>
+			<div class="input-group">
+				<input type="text" name="userSubject" class="input form__input" id="user-subject">
+				<label for="user-subject" class="label form__label">Subject*</label>
+			</div>
+			<div class="input-group">
+				<textarea name="userMessage" id="user-message" class="input form__input" cols="30" rows="2"></textarea>
+				<label for="user-message" class="label form__label">Subject*</label>
+			</div>
+			<div class="policy">
+				<input type="checkbox" name="policyCheckboxs" id="policy-checkboxs" class="policy__checkboxs" checked="">
+				<label for="policy-checkboxs" class="policy__label">I accept <a href="#">Terms and Privacy Policy</a></label>
+			</div>
+			<button class="button form__button">Send</button>
+		</form>
+	</div>
+</div>
+			</div>
+		</div>
 	</main>
 </body>
 

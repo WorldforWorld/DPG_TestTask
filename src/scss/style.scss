@@ -1,9 +1,41 @@
 @import 'templates/variables';
 @import 'templates/form';
 @import 'templates/index';
+@import 'templates/interface';
 @import 'reset';
 body {
 	font-family: 'Roboto', sans-serif;
-	background: url('@img/cosmos.jpg') 0 0 no-repeat;
+	background: url('@img/cosmos.jpg') no-repeat center / cover;
 	color: $text;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 120%;
+}
+.container {
+	width: 100%;
+	padding: 0 20px;
+}
+.row {
+	margin: 0 auto;
+}
+.felx {
+	display: flex;
+	&-colum {
+		flex-direction: column;
+		&-center-horizontal {
+			align-items: center;
+		}
+	}
+	&-container-center {
+		align-items: center;
+		min-height: 100vh;
+		height: 100%;
+	}
+}
+.py-8 {
+	padding: 32px 0;
+}
+textarea {
+	height: 45px;
+	resize:none
 }

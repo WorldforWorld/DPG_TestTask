@@ -1,0 +1,93 @@
+.form {
+	&__wrap {
+		width: 390px;
+		padding: 40px 45px;
+		margin: 25px;
+		border-radius: 27px;
+		box-shadow: $shadow;
+		background-color: $gb-form;
+	}
+	&__header {
+		text-align: center;
+		&-titile {
+			font-weight: 400;
+			font-size: 18px;
+			margin-bottom: 10px;
+			line-height: 120%;
+		}
+		&-subtitle {
+			color: $label-form;
+		}
+	}
+	&__body {
+		margin-top: 10px;
+		.input-group {
+			display: flex;
+			flex-direction: column-reverse;
+			margin-bottom: 38px;
+			.label {
+				color: $label-form;
+				transition: color $transition;
+			}
+			.input {
+				border: none;
+				outline: none;
+				border-bottom: 1px solid $border-form;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 120%;
+				color: $text;
+				background-color: transparent;
+				transition: border $transition;
+				&:focus {
+					border-color: $text;
+					& + .label {
+						color: $text;
+					}
+				}
+			}
+		}
+		.policy {
+			&__label {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				cursor: pointer;
+				&::before {
+					content: '';
+					display: flex;
+					width: 31px;
+					height: 31px;
+					background: $btn;
+					border-radius: 8px;
+					justify-content: center;
+					align-items: center;
+				}
+				color: $label-form;
+				a {
+					color: $policy-text;
+					transition: color $transition;
+					&:hover {
+						color: $text;
+					}
+				}
+			}
+		}
+		#policy-checkboxs {
+			display: none;
+			&:checked ~ .policy__label:before {
+				content: '\2713';
+				text-align: center;
+				color: $text;
+				opacity: 0.7;
+			}
+		}
+	}
+	&__label {
+		margin-bottom: 6px;
+	}
+	&__button {
+		display: flex;
+		margin: 30px auto 0;
+	}
+}
