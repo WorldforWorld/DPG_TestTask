@@ -1,0 +1,9 @@
+@import 'templates/variables';
+@import 'templates/form';
+@import 'templates/index';
+@import 'reset';
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url('@img/cosmos.jpg') 0 0 no-repeat;
+	color: $text;
+}
