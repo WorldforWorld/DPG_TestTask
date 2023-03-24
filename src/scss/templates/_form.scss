@@ -25,6 +25,26 @@
 			display: flex;
 			flex-direction: column-reverse;
 			margin-bottom: 38px;
+			position: relative;
+			.error {
+				display: none;
+			}
+			&.error {
+				.error {
+					display: flex;
+					position: absolute;
+					bottom: -23px;
+					left: 0;
+					font-size: 12px;
+					color: red;
+				}
+				.input {
+					border-bottom: 1px solid red;
+				}
+				.label {
+					color: red;
+				}
+			}
 			.label {
 				color: $label-form;
 				transition: color $transition;
@@ -48,6 +68,21 @@
 			}
 		}
 		.policy {
+			position: relative;
+
+			.error {
+				display: none;
+				position: absolute;
+				bottom: -23px;
+				left: 0;
+				font-size: 12px;
+				color: red;
+			}
+			&.error {
+				.error {
+					display: flex;
+				}
+			}
 			&__label {
 				display: flex;
 				align-items: center;
