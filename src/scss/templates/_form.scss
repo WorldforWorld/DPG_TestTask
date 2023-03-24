@@ -1,6 +1,7 @@
 .form {
 	&__wrap {
-		width: 390px;
+		width: 100%;
+		max-width: 390px;
 		padding: 40px 45px;
 		margin: 25px;
 		border-radius: 27px;
