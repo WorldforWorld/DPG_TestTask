@@ -254,6 +254,7 @@ body {
 }
 .felx-colum-center-horizontal {
   align-items: center;
+  width: 100%;
 }
 .felx-container-center {
   align-items: center;
