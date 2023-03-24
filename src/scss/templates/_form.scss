@@ -85,12 +85,17 @@
 				}
 			}
 			&__label {
-				display: flex;
 				align-items: center;
 				gap: 12px;
 				cursor: pointer;
+				position: relative;
+				padding-left: 42px;
+				line-height: 192%;
 				&::before {
 					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
 					display: flex;
 					width: 31px;
 					height: 31px;
@@ -98,6 +103,7 @@
 					border-radius: 8px;
 					justify-content: center;
 					align-items: center;
+					transform: translateY(-20%);
 				}
 				color: $label-form;
 				a {
